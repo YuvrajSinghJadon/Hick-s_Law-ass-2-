@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+  font-family: "Oswald", sans-serif;
+}
+header {
+  background: linear-gradient(375deg, #1cc7d0, #2ede98);
+  padding: 20px;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  position: relative;
+  display: inline-table;
+  background-color: inherit;
+}
+
+nav ul:after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+nav ul ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+}
+
+nav ul li {
+  float: left;
+  background-color: inherit;
+}
+
+nav ul ul ul {
+  top: 0;
+  left: 100%;
+}
+
+nav ul li a {
+  display: block;
+  padding: 15px 20px;
+  color: #b62c2c;
+  text-decoration: none;
+}
+
+nav ul ul {
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+nav ul ul ul {
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+nav ul ul li {
+  float: none;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  position: relative;
+}
+
+nav ul ul ul li a {
+  padding: 15px 40px;
+  color: #272726;
+}
+
+nav ul ul ul ul li a {
+  padding: 15px 60px;
+  color: #333;
+}
+
+nav ul ul ul ul ul li a {
+  padding: 15px 80px;
+  color: #333;
+}
+
+nav ul li:hover > ul {
+  display: inherit;
+}
+
+nav ul ul ul {
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+  top: 0;
+  left: 100%;
+}
+
+nav ul ul li:hover > ul {
+  visibility: visible;
+  opacity: 1;
+}
+
+nav ul ul {
+  padding: 0;
+  position: absolute;
+  top: 100%;
+}
+
+nav ul li a:hover,
+nav ul ul li a:hover {
+  background-color: #4b4b4b;
+  color: #fff;
+}
+
+nav ul ul ul li a:hover {
+  background-color: #5f5f5f;
+  color: #fff;
+}
+
+nav ul ul ul ul li a:hover {
+  background-color: #737373;
+  color: #fff;
+}
